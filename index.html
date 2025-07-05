@@ -3,191 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SAKHA COLECTION | Featured products</title>
+    <title>SAKHA COLLECTION | Featured Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
-  <body class="bg-secondary">
-    <div class="container border mb-4 mt-4 rounded-3 shadow bg-white">
-        <!--menu-->
-        <nav class="d-md-flex p-4">
-            <div><h1>Our Featured Products</h1></div>
-            <div class="ms-auto my-auto">
-                <nav>
-                    <ul class="list-inline m-0">
-                        <li class="list-inline-item mx-md-3">
-                            <a href="http://sakhaclothing.shop/" class="text-decoration-none text-dark fw-bold" aria-label="Menu">Menu</a>
-                        </li>
-                        <li class="list-inline-item mx-md-3">
-                            <a href="/login" class="text-decoration-none text-dark fw-bold" aria-label="Login">Login</a>
-                        </li>
-                        <li class="list-inline-item mx-md-3">
-                            <a href="/order-list" class="text-decoration-none text-dark fw-bold" aria-label="Order List">Order List</a>
-                        </li>
-                    </ul>
-                </nav>
+  <body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar d-md-flex">
+            <div>
+                <h1><i class="fas fa-tshirt me-2"></i>SAKHA COLLECTION</h1>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a href="http://sakhaclothing.shop/" class="nav-link" aria-label="Menu">
+                    <i class="fas fa-home me-1"></i>Menu
+                </a>
+                <a href="/login" class="nav-link" aria-label="Login">
+                    <i class="fas fa-sign-in-alt me-1"></i>Login
+                </a>
+                <a href="/order-list" class="nav-link" aria-label="Order List">
+                    <i class="fas fa-list me-1"></i>Order List
+                </a>
             </div>
         </nav>
-        <!--Banner-->
-        <div class="px-4 mb-4">
-            <img src="images/White Brown Furniture Collection Banner Free.png" class="w-100 rounded-3">
-        
+
+        <!-- Banner -->
+        <div class="banner-section">
+            <img src="images/White Brown Furniture Collection Banner Free.png" alt="SAKHA Collection Banner">
         </div>
 
-        <!---catalogue-->
-        <h3 class="text-center">Catalogue</h3>
-        <div class="text-center" w-50 mx-auto fw-light> menawarkan kualitas terbaik yang tidak akan mengecewakan pelanggan, berikut beberapa produk yang kami tawarkan :</div>
+        <!-- Catalogue -->
+        <section class="catalogue-section">
+            <h2 class="catalogue-title">Featured Products</h2>
+            <p class="catalogue-description">
+                Menawarkan kualitas terbaik yang tidak akan mengecewakan pelanggan, berikut beberapa produk yang kami tawarkan:
+            </p>
 
-        <div class="row row-cols-md-3 row-cols-2 gx-5 p-5">
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">KAOS SABLON PREMIUM</p>
-                    
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Kaos Sablon Premium"/>
+                    <div class="product-body">
+                        <h5 class="product-title">KAOS SABLON PREMIUM</h5>
                     </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
                     </div>
-                  </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Jaket Sablon Premium"/>
+                    <div class="product-body">
+                        <h5 class="product-title">JAKET SABLON PREMIUM</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sweater Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SWEATER SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sport Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SPORT SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sport Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SPORT SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sport Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SPORT SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sport Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SPORT SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/produk lain 2.jpg" class="product-image" alt="Custom Sport Sablon"/>
+                    <div class="product-body">
+                        <h5 class="product-title">CUSTOM SPORT SABLON</h5>
+                    </div>
+                    <div class="product-footer">
+                        <a href="#" class="btn-detail btnDetail">
+                            <i class="fas fa-eye me-1"></i>Detail
+                        </a>
+                        <span class="product-price harga">Rp.75.000,00</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">JAKET SABLON PREMIUM</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SWEATER SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col mb-5">
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/produk lain 2.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                      <p class="card-text">CUSTOM SPORT SABLON</p>
-                    
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
-                        <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp.75.000,00</span>
-                    </div>
-                  </div>
-            </div>
-
-        </div>
+        </section>
     
-        <!--about us-->
-        <div class="px-4 py-4 bg-secondary text-center">
-            <div class="mx-auto w-100">
-                <h3 class="text-white"> SETIAP PEMBELIAN PADA HARI INI, AKAN DIKIRIM HARI INI JUGA</h3>
-                <p class="text-center text-white"> kami menerima setiap keluhan dan saran dari pelanggan kami untuk terus meningkatkan kualitas kami.
-                </p>
-
-            </div>
-        </div>
+        <!-- About Us -->
+        <section class="info-section">
+            <h3><i class="fas fa-shipping-fast me-2"></i>SETIAP PEMBELIAN PADA HARI INI, AKAN DIKIRIM HARI INI JUGA</h3>
+            <p>Kami menerima setiap keluhan dan saran dari pelanggan kami untuk terus meningkatkan kualitas kami.</p>
+        </section>
     
-        <!--how to order-->
-        <div class="px-4 py-4 bg-secondary text-center">
-            <div class="mx-auto w-100">
-                <h3 class="text-white"> How to order?</h3>
-                <p class="text-center text-white"> chat whatsapp admin untuk pemesanan dan semua pmesanan akan dilayani hanya di whatsapp kami
-                </p>
-
-            </div>
-        </div>
+        <!-- How to Order -->
+        <section class="info-section">
+            <h3><i class="fas fa-question-circle me-2"></i>How to Order?</h3>
+            <p>Chat WhatsApp admin untuk pemesanan dan semua pesanan akan dilayani hanya di WhatsApp kami</p>
+        </section>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
